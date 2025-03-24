@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>	
+		td{
+			margin :10px;
+
+	}</style>
+</head>
+<body>
+
+	<input type="text" name="search" name="ser" id="myInput" placeholder="enter name " onkeyup="searchFun()">
+<table border="2" id="myTable">
+
+	<tr class="header">
+		<th  style="width:40%">NAme</th>
+		<th style="width:40%">Last NAme</th>
+		<th style="width:40%">Course</th>	
+		<th style="width:40%">Mobile</th>
+		<th style="width:40%">Gender</th>
+
+	</tr>	
+
+<tr>
+		<td>Bhavesh</td>
+		<td>Singh</td>
+		<td>C languagge</td>	
+		<td>9691113506</td>
+		<td>Male</td>
+
+	</tr>
+
+<tr>
+		<td>Sonu</td>
+		<td>Singh</td>
+		<td>C languagge</td>	
+		<td>9691113506</td>
+		<td>Male</td>
+
+	</tr>
+<tr>
+		<td>Rohit</td>
+		<td>Singh</td>
+		<td>C languagge</td>	
+		<td>9691113506</td>
+		<td>Male</td>
+
+	</tr>
+<tr>
+		<td>Diksha</td>
+		<td>Singh</td>
+		<td>C languagge</td>	
+		<td>9691113506</td>
+		<td>Male</td>
+
+	</tr>
+<tr>
+		<td>Shiv</td>
+		<td>Singh</td>
+		<td>C languagge</td>	
+		<td>9691113506</td>
+		<td>Male</td>
+
+	</tr>
+<tr>
+		<td>Shambhu</td>
+		<td>Singh</td>
+		<td>C languagge</td>	
+		<td>9691113506</td>
+		<td>Male</td>
+
+	</tr>
+<tr>
+		<td>Rohan</td>
+		<td>Singh</td>
+		<td>C languagge</td>	
+		<td>9691113506</td>
+		<td>Male</td>
+
+	</tr>
+<tr>
+		<td>Deepak</td>
+		<td>Singh</td>
+		<td>C languagge</td>	
+		<td>9691113506</td>
+		<td>Male</td>
+
+	</tr>
+<tr>
+		<td>KAran</td>
+		<td>Singh</td>
+		<td>C languagge</td>	
+		<td>9691113506</td>
+		<td>Male</td>
+
+	</tr>
+<tr>
+		<td>Mohan</td>
+		<td>Singh</td>
+		<td>C languagge</td>	
+		<td>9691113506</td>
+		<td>Male</td>
+
+	</tr>
+<tr>
+		<td>Shyam</td>
+		<td>Singh</td>
+		<td>C languagge</td>	
+		<td>9691113506</td>
+		<td>Male</td>
+
+	</tr>
+
+</table>
+<script>
+/*	function searchFun()
+	{
+
+
+	}
+*/
+/*	const searchFun=()=>// ananomus function and arrow function 
+	{
+		let filter=document.getElementById('myInput').value.toUpperCase();
+		let myTable=document.getElementById('myTable');
+		let tr=myTable.getElementsByTagName('tr');
+		for(var i=0;i<tr.length;i++)
+		{
+			let td=tr[i].getElementsByTagName('td')[0];
+			if(td) 
+			{
+
+				let textvalue=td.textContant || td.innerHTML;
+				if(textvalue.toUpperCase().indexOf(filter)>-1)
+				{
+
+					tr[i].style.display="";
+				}
+				else{
+					tr[i].style.display="none";
+
+				}
+			}
+		}
+	}
+*/
+	function searchFun()
+	{
+
+		let filter=document.getElementById('myInput').value.toUpperCase();
+		let myTable=document.getElementById('myTable');
+		let tr=myTable.getElementsByTagName('tr');
+		for(var i=0;i<tr.length;i++)
+		{
+			let td=tr[i].getElementsByTagName('td')[0];
+			if(td) 
+			{
+
+				let textvalue=td.textContant || td.innerHTML;
+				if(textvalue.toUpperCase().indexOf(filter)>-1)
+				{
+
+					tr[i].style.display="";
+				}
+				else{
+					tr[i].style.display="none";
+
+				}
+			}
+		}
+	}
+	</script>
+</body>
+</html>

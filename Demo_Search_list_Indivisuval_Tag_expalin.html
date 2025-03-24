@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#myDIV {
+  width: 500px;
+  height: 500px;
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+<button onclick="myFunction()">Try it</button>
+
+<div id="myDIV">
+This is my DIV element.
+</div>
+<script>
+function myFunction() {
+  document.getElementById("myDIV").style.display = "";
+}
+</script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+</script>
+</head>
+<body>
+
+Enter your name: <input type="text" id="fname" onchange="myFunction()">
+
+
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<p>Click the button to return the number of cells in the table's first row.</p>
+
+<table id="myTable">
+  <tr>
+    <td>cell 1</td>
+    <td>cell 2</td><td>cell 1</td>
+    <td>cell 2</td>
+  </tr>
+  <tr>
+    <td>cell 3</td>
+    <td>cell 4</td>
+  </tr>
+</table>
+<br> 
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTable").rows[3].cells.length;
+  document.getElementById("demo").innerHTML = "Found " + x + " cells in the first tr element.";
+}
+</script>
+
+</body>
+</html>
+
+
